@@ -34,7 +34,7 @@ alias cat=batcat
 # abbr -a yds yadm diff --staged
 
 # ls
-alias l='ls -l'
+alias l='ls'
 alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
