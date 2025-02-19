@@ -2,8 +2,20 @@
 # alias git=hub
 alias vim=nvim
 alias ls=lsd
-alias cat=batcat
-alias bat=batcat
+
+if test -f /etc/os-release
+    set ID (grep ^ID= /etc/os-release | cut -d= -f2 | tr -d '"')
+
+    switch $ID
+        case debian ubuntu
+            alias cat="batcat -p"
+            alias bat="batcat -p"
+        case arch
+            alias cat="bat -p"
+            alias batcat="bat -p"
+    end
+end
+
 
 # git
 # abbr -a gs git status -sb

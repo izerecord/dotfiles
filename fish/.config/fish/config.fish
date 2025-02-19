@@ -7,3 +7,6 @@ end
 starship init fish | source
 fzf --fish | source
 
+# fzf
+fzf_configure_bindings --directory=\cf --variables=\ce
+set fzf_fd_opts --hidden --max-depth 5 --ignore
