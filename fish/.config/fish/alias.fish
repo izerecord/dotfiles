@@ -3,6 +3,7 @@
 alias vim=nvim
 alias ls=lsd
 alias cat=batcat
+alias bat=batcat
 
 # git
 # abbr -a gs git status -sb
