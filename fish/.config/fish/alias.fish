@@ -8,11 +8,11 @@ if test -f /etc/os-release
 
     switch $ID
         case debian ubuntu
-            alias cat="batcat -p"
-            alias bat="batcat -p"
+            alias cat="batcat"
+            alias bat="batcat"
         case arch
-            alias cat="bat -p"
-            alias batcat="bat -p"
+            alias cat="bat"
+            alias batcat="bat"
     end
 end
 
