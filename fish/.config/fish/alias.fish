@@ -3,6 +3,7 @@
 alias vim=nvim
 alias ls=lsd
 
+# cat bat catbat madness
 if test -f /etc/os-release
     set ID (grep ^ID= /etc/os-release | cut -d= -f2 | tr -d '"')
 
