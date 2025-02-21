@@ -2,13 +2,17 @@ source ~/.config/fish/alias.fish
 
 status is-interactive || exit
 
+###########################
+# starship
+# #########################
 starship init fish | source
-fzf --fish | source
+set -x STARSHIP_CONFIG ~/.config/starship/starship.toml
 
 ###############################################################################
 # fzf specifics
 # prerequisits: plugin `patrickf1/fzf.fish`
 ###############################################################################
+fzf --fish | source
 fzf_configure_bindings \
     --directory=\cf \
     --git_log=\cg \
