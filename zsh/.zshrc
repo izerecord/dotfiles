@@ -2,7 +2,9 @@
 # Aliases and symlinks
 ###############################################################################
 alias cat="bat"
-ln -sf /usr/bin/batcat ~/.local/bin/bat # for ubuntu/debian
+
+# for ubuntu/debian
+mkdir -p ~/.local/bin && ln -sf /usr/bin/batcat ~/.local/bin/bat
 
 ###############################################################################
 # FZF configurations
