@@ -14,6 +14,7 @@ if test -f /etc/os-release
         case arch
             alias cat="bat"
             alias batcat="bat"
+            alias task="go-task"
     end
 end
 

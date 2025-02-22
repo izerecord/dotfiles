@@ -1,10 +1,33 @@
 source ~/.config/fish/alias.fish
 
+
+#
+# add .local/bin to path
+#
+mkdir -p ~/.local/bin
+set -U fish_user_paths $fish_user_paths ~/.local/bin
+
+#
+# theme
+#
+# some hacky test. I dont know. I am not happy
+if not string match -q -- "$fish_color_normal" "cdd6f4"
+    fish_config theme save "Catppuccin Mocha"
+end
+
+#
+# completions
+#
+task --completion fish | source
+flux completion fish | source
+bat --completion fish | source
+
+
 status is-interactive || exit
 
 ###########################
 # starship
-# #########################
+###########################
 starship init fish | source
 set -x STARSHIP_CONFIG ~/.config/starship/starship.toml
 
