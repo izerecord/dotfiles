@@ -25,7 +25,7 @@ $docker_context\
 $time\
 [ ](fg:purple)\
 $cmd_duration\
-$line_break$character"""
+$line_break$shell$character"""
 
 palette = 'catppuccin_mocha'
 
@@ -201,8 +201,8 @@ disabled = false
 
 [shell]
 disabled = false
-# fish_indicator = ""
-
+fish_indicator = ''
+format = '[$indicator]($style)'
 
 [cmd_duration]
 min_time = 500
