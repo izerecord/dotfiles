@@ -201,7 +201,7 @@ disabled = false
 
 [shell]
 disabled = false
-fish_indicator = ""
+# fish_indicator = ""
 
 
 [cmd_duration]

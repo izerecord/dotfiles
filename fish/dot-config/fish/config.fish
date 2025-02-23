@@ -1,6 +1,5 @@
 source ~/.config/fish/alias.fish
 
-
 #
 # add .local/bin to path
 #
@@ -21,7 +20,6 @@ end
 task --completion fish | source
 flux completion fish | source
 bat --completion fish | source
-
 
 status is-interactive || exit
 

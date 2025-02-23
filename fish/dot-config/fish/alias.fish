@@ -2,7 +2,6 @@
 # alias git=hub
 alias vim=nvim
 alias ls=lsd
-alias tree="lsd --tree"
 
 # cat bat catbat madness
 if test -f /etc/os-release

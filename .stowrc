@@ -6,5 +6,4 @@
 --ignore=setup.sh
 --ignore=home
 --no-folding
---target=~/.config
-
+--target=~
