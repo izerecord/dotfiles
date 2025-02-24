@@ -4,16 +4,15 @@ k9s:
   refreshRate: 2
   maxConnRetry: 5
   readOnly: false
-  noExitOnCtrlC: true
+  noExitOnCtrlC: false
   ui:
-    enableMouse: true
+    enableMouse: false
     headless: false
     logoless: false
     crumbsless: false
-    reactive: true
+    reactive: false
     noIcons: false
     defaultsToFullScreen: false
-    skin: catppuccin-mocha-transparent 
   skipLatestRevCheck: false
   disablePodCounting: false
   shellPod:
@@ -31,8 +30,9 @@ k9s:
     tail: 100
     buffer: 5000
     sinceSeconds: -1
-    textWrap: true
-    showTime: true
+    textWrap: false
+    disableAutoscroll: false
+    showTime: false
   thresholds:
     cpu:
       critical: 90
