@@ -10,16 +10,19 @@ set -U fish_user_paths $fish_user_paths ~/.local/bin
 # theme
 #
 # some hacky test. I dont know. I am not happy
-if not string match -q -- "$fish_color_normal" "cdd6f4"
-    fish_config theme save "Catppuccin Mocha"
-end
+# if not string match -q -- "$fish_color_normal" "cdd6f4"
+#     fish_config theme save "Catppuccin Mocha"
+# end
 
 #
 # completions
 #
 task --completion fish | source
 flux completion fish | source
-bat --completion fish | source
+
+# only works on v0.25.0
+# https://github.com/sharkdp/bat/blob/master/CHANGELOG.md
+# bat --completion fish | source
 
 status is-interactive || exit
 
@@ -55,4 +58,3 @@ set -x FZF_DEFAULT_OPTS "\
    --height 40% --tmux bottom,80%,40% --layout reverse --border top"
 # set fzf_preview_file_cmd
 # set fzf_git_log_format 
-

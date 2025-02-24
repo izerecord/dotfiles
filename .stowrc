@@ -1,9 +1,7 @@
 --verbose
---dotfiles
 --ignore=.stowrc
 --ignore=.git
 --ignore=.gitignore
 --ignore=setup.sh
---ignore=home
 --no-folding
 --target=~
