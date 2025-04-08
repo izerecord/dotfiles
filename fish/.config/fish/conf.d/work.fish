@@ -10,4 +10,6 @@ if test (hostname) = casdev
         exec bash -c "source /data/scripts/set_proxy.sh >/dev/null 2>&1; exec fish"
         clear
     end
+    # pnpm
+    set PATH $PATH $HOME/.local/share/pnpm/bin
 end
