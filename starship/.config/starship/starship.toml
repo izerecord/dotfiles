@@ -24,6 +24,7 @@ $docker_context\
 [](fg:blue bg:purple)\
 $time\
 [ ](fg:purple)\
+$kubernetes\
 $cmd_duration\
 $line_break$shell$character"""
 
@@ -198,6 +199,7 @@ disabled = true
 
 [kubernetes]
 disabled = false
+format = '[$symbol$context( \($namespace\))]($style)'
 
 [shell]
 disabled = false
