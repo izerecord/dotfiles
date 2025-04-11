@@ -22,6 +22,6 @@ require("lazy")
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = "plugins",
-  checker = { enabled = true },
+  checker = { enabled = true, notify = false },
 })
 

@@ -24,7 +24,7 @@ $docker_context\
 [](fg:blue bg:purple)\
 $time\
 [ ](fg:purple)\
-$kubernetes\
+$kubernetes \
 $cmd_duration\
 $line_break$shell$character"""
 

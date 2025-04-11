@@ -46,7 +46,7 @@ fzf_configure_bindings \
     --processes=\cp
 
 # search directory
-set -x fzf_fd_opts --hidden --max-depth 5 --ignore
+set -x fzf_fd_opts --hidden --ignore
 # preview directories with `lsd --tree`
 set -x fzf_preview_dir_cmd lsd --tree --all --color=always --icon=always
 
