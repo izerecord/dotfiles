@@ -11,7 +11,7 @@ if test -f /etc/os-release
         case debian ubuntu
             alias cat="batcat"
             alias bat="batcat"
-        case arch
+        case arch nixos
             alias cat="bat"
             alias batcat="bat"
             alias task="go-task"
