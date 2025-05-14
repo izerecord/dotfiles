@@ -9,7 +9,8 @@ return {
       pickers = {
           find_files = {
               theme = "ivy",
-              follow = true
+              follow = true,
+              hidden = true
           }
       },
       extensions = {
