@@ -1,6 +1,5 @@
 --verbose
 --ignore=.stowrc
---ignore=.git
 --ignore=.gitignore
 --ignore=setup.sh
 --no-folding
