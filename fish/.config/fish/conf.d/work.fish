@@ -12,4 +12,8 @@ if test (hostname) = casdev
     end
     # pnpm
     set PATH $PATH $HOME/.local/share/pnpm/bin
+    # nvim
+    set PATH $PATH /opt/nvim-linux-x86_64/bin
+    # env
+    set -x TASK_X_REMOTE_TASKFILES 1
 end
