@@ -10,7 +10,7 @@ return {
           find_files = {
               theme = "ivy",
               follow = true,
-              hidden = true
+              hidden = false
           }
       },
       extensions = {
