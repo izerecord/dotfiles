@@ -22,8 +22,8 @@ export FZF_COMPLETION_DIR_OPTS='--walker dir,follow'
 # Preview file content using bat (https://github.com/sharkdp/bat)
 # TODO: Maybe disable preview for directories
 export FZF_CTRL_T_OPTS="
-    --walker-skip .git,node_modules,target 
-    --preview 'bat -n --color=always {}' 
+    --walker-skip .git,node_modules,target
+    --preview 'bat -n --color=always {}'
     --bind 'ctrl-/:change-preview-window(down|hidden|)'"
 
 # CTRL-Y to copy the command into clipboard using pbcopy
@@ -51,6 +51,13 @@ _fzf_comprun() {
     *) fzf --preview 'bat -n --color=always {}' "$@" ;;
     esac
 }
+
+###############################################################################
+# source starship
+###############################################################################
+
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+eval "$(starship init zsh)"
 
 ###############################################################################
 # Antidote

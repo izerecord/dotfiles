@@ -7,17 +7,17 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
-  "vim_mode": true,
+  "vim_mode": false,
   "icon_theme": "Catppuccin Mocha",
   "features": {
     "edit_prediction_provider": "copilot"
   },
-  "assistant": {
+  "agent": {
     "enabled": true,
     "version": "2",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-4"
+      "model": "gpt-4.1"
     }
   },
   "terminal": {
@@ -27,12 +27,21 @@
     }
   },
   "font_family": "FiraCode Nerd Font",
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
+  "ui_font_size": 18,
+  "buffer_font_size": 18,
   "theme": {
     "mode": "system",
-    "light": "One Light",
+    "light": "Catppuccin Mocha",
     "dark": "Catppuccin Mocha"
   },
-  "autosave": "on_focus_change"
+  "autosave": "on_focus_change",
+  "languages": {
+    "Nix": {
+      "formatter": {
+        "external": {
+          "command": "nixfmt"
+        }
+      }
+    }
+  }
 }
