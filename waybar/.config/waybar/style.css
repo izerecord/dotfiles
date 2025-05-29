@@ -396,7 +396,7 @@ tooltip label {
 
 * {
     font-family: "JetBrainsMono Nerd Font";
-    font-size: 10px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -421,7 +421,7 @@ tooltip label,
 #custom-right3,
 #custom-right4,
 #custom-right5 {
-    font-size: 14.68px;
+    font-size: 22.02px;
 }
 
 /* ─────────────────────────────────────────────────┤ left & right inverse ├───
@@ -429,18 +429,18 @@ tooltip label,
 #custom-leftin1,
 #custom-leftin2,
 #custom-rightin1 {
-    font-size: 15.5px;
+    font-size: 23.25px;
 }
 
 /* ──────────────────────────────────────────────────────────┤ distro icon ├───
 */
 #custom-distro {
-    font-size: 14.6px;
+    font-size: 21.9px;
 }
 
 #custom-left5,
 #custom-right2 {
-    font-size: 15.68px;
+    font-size: 23.52px;
 }
 
 /*

@@ -47,6 +47,7 @@
     "custom/wifi", // wi-fi
     "bluetooth", // bluetooth
     "custom/update", // system update
+    //"wlr/taskbar", // taskbar
     "custom/right5"
   ],
 
@@ -83,11 +84,9 @@
     "on-scroll-up": "hyprctl dispatch workspace -1",
     "on-scroll-down": "hyprctl dispatch workspace +1",
     "persistent-workspaces": {
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-      "5": []
+      "1": ["DP-1"],
+      "2": ["DP-1"],
+      "3": ["DP-1"]
     }
   },
 
@@ -241,7 +240,7 @@
   // ───────────────────────────────────────────────────────────────┤ date ├───
 
   "clock#date": {
-    "format": "󰸗 {:%m-%d}",
+    "format": "󰸗 {:%d %b}",
     "tooltip-format": "<tt>{calendar}</tt>",
 
     "calendar": {
@@ -345,7 +344,8 @@
     },
 
     "tooltip-format": "Device: {desc}",
-    "on-click": "~/.config/waybar/scripts/volume-control.sh -o m",
+    "on-click": "pavucontrol",
+    "on-click-right": "~/.config/waybar/scripts/volume-control.sh -o m",
     "on-scroll-up": "~/.config/waybar/scripts/volume-control.sh -o i",
     "on-scroll-down": "~/.config/waybar/scripts/volume-control.sh -o d",
     "min-length": 6,

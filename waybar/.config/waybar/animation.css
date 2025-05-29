@@ -148,7 +148,7 @@
 */
 @keyframes distro_expand {
     to {
-        font-size: 14.6px;
+        font-size: 21.9px;
     }
 }
 
@@ -163,7 +163,7 @@
 */
 @keyframes power_expand {
     to {
-        font-size: 10px;
+        font-size: 15px;
     }
 }
 
@@ -177,7 +177,7 @@
 */
 @keyframes module_expand {
     to {
-        font-size: 10px;
+        font-size: 15px;
     }
 }
 
