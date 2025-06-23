@@ -1,0 +1,9 @@
+{
+  "name": "ff2mpv",
+  "description": "ff2mpv's external manifest",
+  "path": "/nix/store/0r26n2r35mxh5h3cphgw1pspfn93y14m-ff2mpv-rust-1.1.7/bin/ff2mpv-rust",
+  "type": "stdio",
+  "allowed_extensions": [
+    "ff2mpv@yossarian.net"
+  ]
+}
