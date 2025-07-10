@@ -50,11 +50,13 @@ set -x fzf_fd_opts --hidden --ignore
 # preview directories with `lsd --tree`
 set -x fzf_preview_dir_cmd lsd --tree --all --color=always --icon=always
 
-# fzf catpucchin and 50% height
+# fzf catpucchin and 40% height
 set -x FZF_DEFAULT_OPTS "\
-   --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
-   --color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
-   --color=selected-bg:#45475a \
+   --color=fg:#CDD6F4,header:#F38BA8,info:#CBA6F7,pointer:#F5E0DC \
+   --color=marker:#B4BEFE,fg+:#CDD6F4,prompt:#CBA6F7,hl+:#F38BA8 \
+   --color=selected-bg:#45475A \
+   --color=border:#313244,label:#CDD6F4 \
    --height 40% --tmux bottom,80%,40% --layout reverse --border top"
+
 # set fzf_preview_file_cmd
-# set fzf_git_log_format 
+# set fzf_git_log_format
