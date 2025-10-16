@@ -16,6 +16,39 @@ if type -q zoxide
     zoxide init fish | source
 end
 
+# fzf
+
+###############################################################################
+# fzf specifics
+# prerequisits: plugin `patrickf1/fzf.fish`
+# https://github.com/PatrickF1/fzf.fish
+###############################################################################
+fzf --fish | source
+fzf_configure_bindings \
+    --directory=\cf \
+    --git_log=\cb \
+    --git_status=\cg \
+    --history=\cr \
+    --variables=\ce \
+    --processes=\cp
+# search directories
+set -x fzf_fd_opts --hidden --ignore
+set -x fzf_preview_dir_cmd eza --tree --all --color=always --icons=auto
+set fzf_preview_file_cmd bat --color=always --style=numbers
+#set fzf_git_log_format "%s"
+set fzf_diff_highlighter DFT_DISPLAY=inline DFT_COLOR=always git show --color=always --stat --patch --ext-diff {1}
+
+#set -x FZF_DEFAULT_OPTS "\
+#   --height 40% --tmux bottom,100%,40% --layout reverse --border top"
+
+# fzf catpucchin and 40% height
+#set -x FZF_DEFAULT_OPTS "\
+#   --color=fg:#CDD6F4,header:#F38BA8,info:#CBA6F7,pointer:#F5E0DC \
+#   --color=marker:#B4BEFE,fg+:#CDD6F4,prompt:#CBA6F7,hl+:#F38BA8 \
+#   --color=selected-bg:#45475A \
+#   --color=border:#313244,label:#CDD6F4 \
+#   --height 40% --tmux bottom,80%,40% --layout reverse --border top"
+
 # theme
 
 #

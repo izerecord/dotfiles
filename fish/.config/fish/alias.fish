@@ -7,7 +7,10 @@ alias ls=eza
 alias cat=bat
 alias grep=rg
 alias cd=z
-alias fzf=ff
+
+# just some shortcuts
+abbr -a lg lazygit
+abbr -a ff fzf
 
 # git
 abbr -a gs git status -sb
@@ -20,15 +23,13 @@ abbr -a gca git commit --amend
 # abbr -a gco git checkout
 abbr -a gp git push
 abbr -a gpl git pull
-abbr -a gl git log
+abbr -a gl git log -p --ext-diff
 abbr -a gd git diff
 abbr -a gds git diff --staged
 abbr -a gr git rebase -i HEAD~15
 abbr -a gf git fetch
 # abbr -a gfc git findcommit
 # abbr -a gfm git findmessage
-
-abbr -a lg lazygit
 
 # yadm
 # abbr -a ys yadm status -s -b
