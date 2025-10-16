@@ -12,7 +12,12 @@ fd = "latest"
 ripgrep = "latest"
 zoxide = "latest"
 btop = "latest"
+difftastic = "latest"
+shfmt = "latest"
 
+#
+# -- serious stuff --
+#
 task = "3.45"
 kubectx = "0.9"
 kubens = "0.9"
@@ -30,6 +35,9 @@ terragrunt = "0.90"
 jq = "1.8"
 pipx = "1.8"
 
+#
+# -- programming languages --
+#
 node = "22"
 python = "3.12"
 go = "1.25"
