@@ -1,0 +1,54 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+
+format = """
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$cmd_duration\
+$line_break\
+$python\
+$character"""
+
+# Directory
+[directory]
+style = "#7E9CD8"  # CrystalBlue
+
+# Character
+[character]
+success_symbol = "[❯](#98BB6C)"   # SpringGreen
+error_symbol = "[❯](#C34043)"     # AutumnRed
+vimcmd_symbol = "[❮](#7E9CD8)"    # CrystalBlue
+
+# Git branch
+[git_branch]
+format = "[$branch]($style)"
+style = "#957FB8"  # OniViolet
+
+# Git status
+[git_status]
+format = "[[($conflicted$untracked$modified$staged$renamed$deleted)]($style) ($ahead_behind$stashed)]($style)"
+style = "#6A9589"  # WaveAqua1
+conflicted = ""
+untracked = "+"
+modified = "!"
+staged = "●"
+renamed = "»"
+deleted = "x"
+stashed = "≡"
+
+# Git state
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "#727169"  # FujiGray
+
+# Command duration
+[cmd_duration]
+format = "[$duration]($style) "
+style = "#E6C384"  # CarpYellow
+
+# Python
+[python]
+format = "[$virtualenv]($style) "
+style = "#957FB8"  # OniViolet

@@ -1,23 +1,13 @@
 # apps... but better
 # alias git=hub
+
 alias vim=nvim
-alias ls=lsd
-
-# cat bat catbat madness
-if test -f /etc/os-release
-    set ID (grep ^ID= /etc/os-release | cut -d= -f2 | tr -d '"')
-
-    switch $ID
-        case debian ubuntu
-            alias cat="batcat"
-            alias bat="batcat"
-        case arch nixos
-            alias cat="bat"
-            alias batcat="bat"
-            alias task="go-task"
-    end
-end
-
+alias vi=nvim
+alias ls=eza
+alias cat=bat
+alias grep=rg
+alias cd=z
+alias fzf=ff
 
 # git
 abbr -a gs git status -sb
@@ -38,7 +28,7 @@ abbr -a gf git fetch
 # abbr -a gfc git findcommit
 # abbr -a gfm git findmessage
 
-abbr -a lg lazygit 
+abbr -a lg lazygit
 
 # yadm
 # abbr -a ys yadm status -s -b
