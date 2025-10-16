@@ -6,15 +6,14 @@ k9s:
   readOnly: false
   noExitOnCtrlC: false
   ui:
-    enableMouse: false
+    enableMouse: true
     headless: false
     logoless: false
     crumbsless: false
     reactive: false
     noIcons: false
     defaultsToFullScreen: false
-    skin: catppuccin-mocha-transparent
-    skipLatestRevCheck: false
+    skin: kanagawa
   disablePodCounting: false
   shellPod:
     image: busybox:1.35.0
