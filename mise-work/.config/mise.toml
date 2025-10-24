@@ -1,4 +1,4 @@
-min_version = '2025.10.8'
+min_version = '2025.10'
 
 #
 # -- fancy stuff --
@@ -24,7 +24,7 @@ shfmt = "latest"
 task = "3.45"
 kubectx = "0.9"
 kubens = "0.9"
-flux2 = "0.7"
+flux2 = "2.7"
 sops = "3.11"
 age = "1.2"
 kubectl = "1.33"
