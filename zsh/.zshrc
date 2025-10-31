@@ -1,10 +1,11 @@
 ###############################################################################
 # Aliases and symlinks
 ###############################################################################
-alias cat="bat"
+
+#alias cat="bat"
 
 # for ubuntu/debian
-mkdir -p ~/.local/bin && ln -sf /usr/bin/batcat ~/.local/bin/bat
+#mkdir -p ~/.local/bin && ln -sf /usr/bin/batcat ~/.local/bin/bat
 
 ###############################################################################
 # FZF configurations
@@ -53,10 +54,24 @@ _fzf_comprun() {
 }
 
 ###############################################################################
-# source starship
+# source mise, starship, zoxide
 ###############################################################################
 
-eval "$(starship init zsh)"
+# mise
+if command -v mise >/dev/null 2>&1; then
+  eval "$(mise activate zsh)"
+fi
+
+# starship
+if command -v starship >/dev/null 2>&1; then
+  eval "$(starship init zsh)"
+fi
+
+# zoxide
+if command -v zoxide >/dev/null 2>&1; then
+  eval "$(zoxide init zsh)"
+fi
+
 
 ###############################################################################
 # Antidote
