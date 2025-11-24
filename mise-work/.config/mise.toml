@@ -45,3 +45,7 @@ node = "22"
 python = "3.12"
 go = "1.25"
 rust = "1.90"
+
+[env]
+SOPS_EDITOR = "nvim"
+

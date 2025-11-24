@@ -1,10 +1,32 @@
 add_newline = true
-command_timeout = 200
-format = "[$directory$git_branch$git_status]($style)\n$shell$character"
+command_timeout = 600
+#format = "[$directory$git_branch$git_status]($style)\n$shell$character"
+# continuation_prompt = "[.](bright-black) "
+
+#[character]
+#error_symbol = "[✗](bold cyan)"
+#success_symbol = "[❯](bold cyan)"
+
+[hostname]
+disabled = true
+
+[mise]
+disabled = false
+
 
 [character]
-error_symbol = "[✗](bold cyan)"
 success_symbol = "[❯](bold cyan)"
+error_symbol = "[✗](bold cyan)"
+vimcmd_symbol = "[<](bold green)"
+vimcmd_visual_symbol = "[<](bold yellow)"
+vimcmd_replace_symbol = "[<](bold purple)"
+vimcmd_replace_one_symbol = "[<](bold purple)"
+
+[container]
+disabled = true
+
+[python]
+version_format = '${major}.${minor}'
 
 [directory]
 truncation_length = 2
