@@ -12,39 +12,39 @@
     "enable_feedback": false,
     "inline_assistant_model": {
       "provider": "zed.dev",
-      "model": "claude-sonnet-4-5"
+      "model": "claude-sonnet-4-5",
     },
     "always_allow_tool_actions": true,
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-sonnet-4-5"
+      "model": "claude-sonnet-4-5",
     },
-    "model_parameters": []
+    "model_parameters": [],
   },
   "tab_size": 2,
   "languages": {
     "OpenTofu": {
-      "tab_size": 2
+      "tab_size": 2,
     },
     "YAML": {
-      "tab_size": 2
-    }
+      "tab_size": 2,
+    },
   },
   "autosave": "on_focus_change",
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "buffer_font_family": "FiraCode Nerd Font",
   "buffer_font_features": {
-    "calt": true
+    "calt": true,
   },
   "terminal": {
     "scrollbar": {
-      "show": "auto"
+      "show": "auto",
     },
     "toolbar": {
-      "breadcrumbs": false
+      "breadcrumbs": false,
     },
     "shell": "system",
     "button": true,
@@ -52,8 +52,8 @@
     "minimum_contrast": 0,
     "font_size": 20,
     "font_features": {
-      "calt": true
-    }
+      "calt": true,
+    },
   },
   "vim_mode": false,
   "base_keymap": "VSCode",
@@ -62,6 +62,6 @@
   "theme": {
     "mode": "system",
     "light": "Gruvbox Light",
-    "dark": "Kanagawa Wave"
-  }
+    "dark": "Kanagawa Wave",
+  },
 }
