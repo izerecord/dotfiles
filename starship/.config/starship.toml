@@ -1,18 +1,11 @@
 add_newline = true
-command_timeout = 600
-#format = "[$directory$git_branch$git_status]($style)\n$shell$character"
-# continuation_prompt = "[.](bright-black) "
-
-#[character]
-#error_symbol = "[✗](bold cyan)"
-#success_symbol = "[❯](bold cyan)"
 
 [hostname]
 disabled = true
 
 [mise]
 disabled = false
-
+healthy_symbol = "✓"
 
 [character]
 success_symbol = "[❯](bold cyan)"
@@ -57,4 +50,3 @@ deleted    = ""
 disabled = false
 fish_indicator = ''
 format = '[$indicator]($style)'
-

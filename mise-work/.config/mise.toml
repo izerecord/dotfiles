@@ -8,7 +8,7 @@ usage = "latest"
 starship = "latest"
 bat = "latest"
 neovim = "latest"
-tmux = "3.5a"
+tmux = "3.6a"
 fzf = "latest"
 eza = "latest"
 fd = "latest"
@@ -17,35 +17,39 @@ zoxide = "latest"
 btop = "latest"
 difftastic = "latest"
 shfmt = "latest"
+fastfetch = "latest"
 
 #
-# -- serious stuff --
+# -- devops stuff --
 #
-task = "3.45"
-kubectx = "0.9"
-kubens = "0.9"
-flux2 = "2.7"
-sops = "3.11"
-age = "1.2"
+task = "latest"
+kubectx = "latest"
+kubens = "latest"
+sops = "latest"
+age = "latest"
+terragrunt = "latest"
+# flux2 = "2.7"
 kubectl = "1.33"
-k9s = "0.50"
-fastfetch = "2.53"
-vault = "1.20"
-terraform = "1.13"
-helm = "3.19"
-opentofu = "1.10"
-terragrunt = "0.90"
-jq = "1.8"
-pipx = "1.8"
+k9s = "latest"
+
+# vault = "1.20"
+# terraform = "1.13"
+# helm = "3.19"
+# opentofu = "1.10"
+# jq = "1.8"
+#
+
+# -- packaging stuff --
+#
+pipx = "latest"
 
 #
 # -- programming languages --
 #
-node = "22"
-python = "3.12"
-go = "1.25"
-rust = "1.90"
+node = "latest"
+python = "3.14"
+go = "latest"
+rust = "stable"
 
 [env]
 SOPS_EDITOR = "nvim"
-
