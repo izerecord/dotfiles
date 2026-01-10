@@ -7,6 +7,7 @@ alias ls=eza
 alias cat=bat
 alias grep=rg
 alias cd=z
+alias k=kubectl
 
 # just some shortcuts
 abbr -a lg lazygit
