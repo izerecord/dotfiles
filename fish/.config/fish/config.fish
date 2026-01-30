@@ -22,6 +22,10 @@ if type -q krew
     set -gx PATH $PATH $HOME/.krew/bin
 end
 
+if type -q brew
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv fish)"
+end
+
 # fzf
 
 ###############################################################################
