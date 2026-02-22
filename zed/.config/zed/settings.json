@@ -8,6 +8,7 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "format_on_save": "on",
+  "soft_wrap": "editor_width",
   "agent": {
     "enable_feedback": false,
     "inline_assistant_model": {
