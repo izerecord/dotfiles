@@ -26,6 +26,11 @@ if type -q brew
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv fish)"
 end
 
+# kubie
+if type -q kubie
+    kubie generate-completion fish | source
+end
+
 # fzf
 
 ###############################################################################

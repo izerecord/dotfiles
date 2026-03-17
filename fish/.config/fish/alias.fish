@@ -9,6 +9,10 @@ alias grep=rg
 alias cd=z
 alias k=kubectl
 
+# kubeswitch
+alias s='kubie ctx'
+alias sn='kubie ns'
+
 # just some shortcuts
 abbr -a lg lazygit
 abbr -a ff fzf

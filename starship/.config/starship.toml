@@ -18,6 +18,9 @@ vimcmd_replace_one_symbol = "[<](bold purple)"
 [container]
 disabled = true
 
+[kubernetes]
+disabled = false
+
 [python]
 version_format = '${major}.${minor}'
 
