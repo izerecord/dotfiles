@@ -4,12 +4,16 @@ min_version = "2026.6"
 # -- fancy stuff --
 #
 [tools]
-usage = "latest"
+usage = "3.5"
 starship = "latest"
 bat = "latest"
 neovim = "latest"
-tmux = "3.6a"
+tmux = "3.6b"
+claude = "latest"
 fzf = "latest"
+gh = "latest"
+flux2 = "2.9"
+# tombi =  "latest"
 eza = "latest"
 fd = "latest"
 ripgrep = "latest"
@@ -23,6 +27,8 @@ lazygit = "latest"
 #
 # -- devops stuff --
 #
+cilium-cli = "latest"
+cilium-hubble = "latest"
 task = "latest"
 kubie = "latest"
 sops = "latest"
@@ -50,6 +56,8 @@ node = "latest"
 python = "3.14"
 go = "latest"
 rust = "stable"
+cmctl = "latest"
+helm = "latest"
 
 [env]
 SOPS_EDITOR = "nvim"
