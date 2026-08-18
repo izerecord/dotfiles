@@ -7,11 +7,12 @@ alias ls=eza
 alias cat=bat
 alias grep=rg
 alias cd=z
-alias k=kubectl
 
 # kubeswitch
-alias s='kubie ctx'
-alias sn='kubie ns'
+abbr -a s kubie ctx
+abbr -a sn kubie ns
+
+abbr -a k kubectl
 
 # just some shortcuts
 abbr -a lg lazygit

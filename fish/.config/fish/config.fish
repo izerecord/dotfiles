@@ -1,3 +1,5 @@
+set -gx LANG en_GB.UTF-8
+
 # aliases
 source ~/.config/fish/alias.fish
 # theme
