@@ -1,0 +1,13 @@
+[Unit]
+Description=Wake the displays when a Moonlight client polls Sunshine
+After=app-dev.lizardbyte.app.Sunshine.service
+
+[Service]
+ExecStart=%h/.config/sunshine/prep/wake.sh
+Restart=always
+RestartSec=5s
+
+[Install]
+# Not graphical-session.target: Sunshine starts after xdg-desktop-autostart.target, which
+# comes after graphical-session.target, so ordering this after Sunshine would be a cycle.
+WantedBy=app-dev.lizardbyte.app.Sunshine.service
